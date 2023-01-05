@@ -3,7 +3,7 @@ import {Text} from 'react-native';
 import styles from "./styles"
 const Title = (props) => {
     return (
-        <Text style={[styles.title, props.bold ? ]}>
+        <Text style={[styles.title, props.style]}>
             {props.text}
         </Text>
     );

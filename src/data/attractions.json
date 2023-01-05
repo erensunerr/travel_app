@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "name": "Colosseum",
+    "city": "Rome",
+    "country": "Italy",
+    "entry_price": "$20",
+    "address": "Piazza del Colosseo, 1, 00184 Roma RM, Italy",
+    "opening_time": "9:00 AM",
+    "closing_time": "7:00 PM",
+    "categories": [
+      "Popular",
+      "Historical"
+    ],
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Colosseo_2020.jpg/1200px-Colosseo_2020.jpg",
+      "https://www.travelandleisure.com/thmb/jezFf4Kk_w-aIYEiA9Hqn6m61_o=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/colosseum-rome-night-stars-ARENA0217-b7ebd36d82b0427caaac90674ba17028.jpg",
+      "https://www.rome.info/wp-content/uploads/f-colosseum-arena.jpg",
+      "https://hips.hearstapps.com/hmg-prod/images/tod-s-for-colosseum-hypogea-1-1624912790.jpg"
+    ],
+    "coordinates": {
+      "lat": 41.8902,
+      "lon": 12.4922
+    }
+  },
+  {
+    "id": 2,
+    "name": "Eiffel Tower",
+    "city": "Paris",
+    "country": "France",
+    "entry_price": "$15",
+    "address": "Champ de Mars, 5 Avenue Anatole France, 75007 Paris, France",
+    "opening_time": "9:00 AM",
+    "closing_time": "11:00 PM",
+    "categories": [
+      "Modern",
+      "Popular"
+    ],
+    "images": [
+      "https://i.natgeofe.com/k/c41b4f59-181c-4747-ad20-ef69987c8d59/eiffel-tower-night_2x3.jpg"
+    ],
+    "coordinates": {
+      "lat": 48.8584,
+      "lon": 2.2945
+    }
+  },
+  {
+    "id": 3,
+    "name": "Big Ben",
+    "city": "London",
+    "country": "United Kingdom",
+    "entry_price": "Free",
+    "address": "Elizabeth Tower, Houses of Parliament, Westminster, London SW1A 0AA, UK",
+    "opening_time": "9:00 AM",
+    "closing_time": "5:00 PM",
+    "categories": [
+      "Modern",
+      "Historical"
+    ],
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Taj_Mahal_in_India_-_Kristian_Bertel.jpg/500px-Taj_Mahal_in_India_-_Kristian_Bertel.jpg"
+    ],
+    "coordinates": {
+      "lat": 51.5007,
+      "lon": -0.1246
+    }
+  }
+]
