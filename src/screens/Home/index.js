@@ -1,5 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {SafeAreaView, View, FlatList, ScrollView, Text} from 'react-native';
+import * as Linking from "expo-linking";
+
 import Title from "../../components/Title";
 
 import styles from "./styles";
@@ -11,9 +13,10 @@ import CATEGORIES from '../../data/categories.json';
 
 const ALL = 'All';
 
-const Home = () => {
+const Home = ({ navigation }) => {
     const [selectedCategory, setSelectedCategory] = useState("All");
     const [data, setData] = useState(JSON_DATA);
+
 
     useEffect(
         () => {
@@ -31,6 +34,7 @@ const Home = () => {
         },
         [selectedCategory]
     )
+
 
 
     return (
@@ -66,6 +70,7 @@ const Home = () => {
                             subtitle={item.city}
                             source={item.images?.length ? item.images[0] : null}
                             style={index % 2 === 0 ? {marginRight: 12} : {}}
+                            onPress={() => navigation.navigate('AttractionDetails', { item })}
                         />
                 }
                 keyExtractor={

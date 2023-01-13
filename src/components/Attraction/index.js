@@ -1,13 +1,11 @@
 import React from 'react';
-import {FlatList, Text, View, TouchableOpacity, Image} from "react-native";
+import {Text, View, TouchableOpacity, Image} from "react-native";
 import styles from "./styles";
-import Title from "../Title";
 
-const Attraction = ({ title, subtitle,  source, style }) => {
+const Attraction = ({ title, subtitle,  source, style, onPress }) => {
     // The card component
     return (
-        <View style={[styles.card, style]}>
-
+        <TouchableOpacity style={[styles.card, style]} onPress={onPress}>
             <Image
                 source={{uri: source}}
                 style={styles.image}
@@ -22,7 +20,7 @@ const Attraction = ({ title, subtitle,  source, style }) => {
                     {subtitle}
                 </Text>
             </View>
-        </View>
+        </TouchableOpacity>
     )
 }
 
