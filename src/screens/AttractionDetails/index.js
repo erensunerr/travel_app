@@ -17,7 +17,32 @@ const AttractionDetails = ({ route, navigation }) => {
         longitude: item.coordinates["lon"],
     };
 
+    const handleShare = (item) => {
 
+        // const url = Linking.createURL(
+        //     'wannago',
+        //     {
+        //         queryParams: {
+        //                 id
+        //         }
+        //     }
+        // )
+        const url = new URL("https://www.google.com/");
+        url.searchParams.append("q", item.name)
+
+
+        console.log(url)
+        Share.share({
+            url: url.href
+        })
+        .then((res) => {
+            console.log(res);
+        })
+        .catch((err) => {
+            err && console.log(err);
+        });
+
+    }
 
 
 
@@ -50,7 +75,7 @@ const AttractionDetails = ({ route, navigation }) => {
                         style={styles.icon}
                         size={32}
                         color="white"
-                        onPress={() => console.log('Item Shared')}
+                        onPress={() => handleShare(item)}
                     />
 
                 </SafeAreaView>

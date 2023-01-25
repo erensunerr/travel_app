@@ -36,6 +36,19 @@ const Home = ({ navigation }) => {
     )
 
 
+    // // See if app was opened with a link, redirect to attraction if it was
+    // const url = Linking.useURL();
+    // if (url) {
+    //     const { hostname, path, queryParams } = Linking.parse(url);
+    //     console.log(hostname, path, queryParams)
+    //     const item = data.filter(
+    //         ({item}) => item?.id === id
+    //     )[0];
+    //     console.log('ITEM WITH ID', item);
+    //     if (item) {
+    //         navigation.navigate('AttractionDetails', { item })
+    //     }
+    // }
 
     return (
         <SafeAreaView style={styles.container}>

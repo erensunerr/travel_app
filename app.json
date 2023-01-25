@@ -22,7 +22,8 @@
       "supportsTablet": true,
       "config": {
         "googleMapsApiKey": "AIzaSyA2T4ESvg2SkMh35mdbh5LX802ekrJteZc"
-      }
+      },
+      "bundleIdentifier": "travel-app"
     },
     "android": {
       "adaptiveIcon": {
@@ -33,10 +34,16 @@
         "googleMaps": {
           "apiKey": "AIzaSyA2T4ESvg2SkMh35mdbh5LX802ekrJteZc"
         }
-      }
+      },
+      "package": "com.gerroo.travel_app"
     },
     "web": {
       "favicon": "./src/assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "d8777870-8f66-4844-9ab9-e97f2e2a8435"
+      }
     }
   }
 }
